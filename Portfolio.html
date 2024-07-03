@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="#">Bienvenue sur mon Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('accueil')">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('portfolio')">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('contact')">Me Contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section active container mt-5 animate__animated animate__fadeIn">
+        <div class="text-center">
+            <img src="Portrait.png" alt="Photo de moi" class="rounded-circle mb-3" width="150">
+            <h1>Expert Data, Data Analyst, Data Scientist</h1>
+			<hr>
+            <p>Je suis Ludovic Picard, un professionnel passionné par l'analyse de données et le développement de solutions data-driven. Avec une solide expérience en tant que Data Analyst et Data Scientist, j'ai eu l'opportunité de travailler sur divers projets académiques et professionnels qui m'ont permis de développer mes compétences techniques et analytiques.</p>
+			<hr>
+			<h2>Compétences Techniques</h2>
+			<hr>
+			<ul>
+				<li class="centered-list">Langages de Programmation: Python, R, SQL, VBA</li>
+				<li class="centered-list">Outils d'Analyse de Données: Excel, Power BI, Tableau</li>
+				<li class="centered-list">Base de Données: MySQL, PostgreSQL</li>
+				<li class="centered-list">Modélisation et Analyse Statistique: Régressions, Analyse de Clusters, Machine Learning</li>
+			</ul>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section container mt-5 animate__animated animate__fadeIn">
+        <h2>Projets Professionnels Réalisés en BUT Science des Données</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Projet en équipe avec l'entreprise TheGreenLink</h3>
+						<hr>
+                        <p class="card-text">TheGreenLink est une entreprise de coaching pour réduire l'impact environnemental et atteindre les objectifs climatiques des entreprises mais également à garder une longueur d'avance sur le marché.</p>
+                        <p class="card-text">Le but de ce projet académique était de créer un moteur d'analogie pour que les conversions soient comprises par tout le monde avec des exemples simples.</p>
+                        <p class="card-text">En équipe de 5 étudiants, j'ai pu participer au code VBA de notre moteur d'analogie en travaillant principalement sur la partie exportation des données. J'ai pu également écrire un compte rendu à chaque fin de séance. J'ai aussi été chargé d'écrire les échanges entre le client et notre équipe.</p>
+                        <hr>
+                        <p class="card-text">Vous pouvez également retrouver la présentation du projet juste ici :</p>
+                        <button class="btn btn-primary" onclick="window.location.href='TheGreenLink.pptx';">Télécharger la présentation du projet</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Développement d'une macro VBA pour Amaline Assurances</h3>
+                        <p class="card-text">Amaline Assurances est une entreprise de courtage du groupe Groupama. L'entreprise a 3 types de partenariats, le partenaire principal Renault/Dacia où ils réalisent des contrats auto/habitation pour Groupama. Le contrat emprunteur pour GGVIE (Groupama GAN Vie) et le contrat juridique/animaux pour GPJ (Groupama Protection Juridique).</p>
+						<p class="card-text">Le but de ce stage était de créer une macro VBA pour le fichier des accords clients des conseillers pour les responsables d'équipes de chez Amaline Assurances. Le but de la macro était de copier les données des différents fichiers conseiller pour les coller dans un seul fichier, ensuite d'harmoniser les données puis de mettre à jour certains indicateurs comme qui a exécuté en dernier la macro et à quel date, le nombres de lignes dans le fichier, etc.</p>
+						<hr>
+						<p class="card-text">Voici la présentation ainsi que le rapport final contenant toutes les informations du stage :</p>
+						<button class="btn btn-primary" onclick="window.location.href='Amaline Assurances.pptx';">Télécharger la présentation de stage</button>
+						<hr>
+						<button class="btn btn-primary" onclick="window.location.href='Rapport_stage_Ludovic_Picard.pdf';">Télécharger le rapport de stage</button>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="card-title">Data Analyst en alternance chez Orange</h3>
+                        <p class="card-text">Orange opère principalement dans le secteur des télécommunications, un domaine qui a connu d'importantes transformations au cours des dernières décennies, passant de la téléphonie fixe traditionnelle à une gamme étendue de services numériques et de solutions de communication.</p>
+						<p class="card-text">Le but de cette alternance était de créer des tableaux de bord sur Excel et Power BI pour analyser et suivre les différentes ventes de l'entreprise. J'ai pu intégrer le département performance de l'Agence Distribution Ouest pour actualiser et suivre le pilotage d'une unité commerciale avec une trentaine de boutiques.</p>
+						<hr>
+						<p class="card-text">Voici la présentation ainsi que le rapport final contenant toutes les informations de l'alternance :</p>
+						<button class="btn btn-primary" onclick="window.location.href='Orange.pptx';">Télécharger la présentation d'alternance</button>
+						<hr>
+						<button class="btn btn-primary" onclick="window.location.href='Rapport_alternance_Ludovic_Picard.pdf';">Télécharger le rapport d'alternance</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section container mt-5 animate__animated animate__fadeIn">
+        <h2>Me Contacter</h2>
+		<hr>
+        <p>Email : <a href="mailto:ludo.picard@outlook.fr">ludo.picard@outlook.fr</a></p>
+        <p>Téléphone : <a href="tel:0645884400">06 45 88 44 00</a></p>
+        <button class="btn btn-primary" onclick="window.location.href='CV_Ludovic_Picard.pdf';">Télécharger mon CV</button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function showSection(sectionId) {
+            // Masquer toutes les sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Afficher la section sélectionnée
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>

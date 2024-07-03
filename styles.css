@@ -1,0 +1,87 @@
+/* Arrière-plan général pour le body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Background.jpg') no-repeat center center fixed; /* Ajoutez votre image de fond ici */
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Bandeau de navigation */
+header {
+    background-color: #343a40; /* Bleu foncé pour le fond de navigation */
+    color: #ffffff; /* Texte blanc pour contraste */
+    padding: 10px 0;
+}
+
+.navbar {
+    background-color: #343a40; /* Bleu foncé pour le fond de navigation */
+}
+
+.nav-link {
+    color: #17a2b8 !important; /* Bleu clair pour les liens de navigation */
+}
+
+.nav-link:hover {
+    color: #138496 !important; /* Bleu légèrement plus foncé au survol */
+}
+
+/* Arrière-plan des sections */
+.section {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.8);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 90%; /* Limiter la largeur des sections pour un meilleur design */
+}
+
+.card {
+    background-color: rgba(128, 128, 128, 0.8);
+    border: none;
+}
+
+.card-title {
+    color: #000000;
+}
+
+.card-text {
+    color: #000000;
+}
+
+.project-image {
+    max-width: 100%; /* Assurer que l'image prend toute la largeur disponible */
+    height: auto; /* Assurer que l'image est redimensionnée proportionnellement */
+}
+
+.btn-primary {
+    background-color: #17a2b8; /* Bleu clair pour les boutons */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #138496; /* Bleu légèrement plus foncé au survol */
+}
+
+/* Agrandir la section du portfolio */
+#portfolio .card {
+    width: 100%; /* Prendre toute la largeur disponible */
+    height: auto; /* Adapter la hauteur automatiquement */
+}
+
+#portfolio .card-body {
+    padding: 20px; /* Ajouter du padding au corps de la carte */
+}
+
+	.centered-list {
+        list-style-position: inside;
+        padding: 0;
+        text-align: center;
+    }
+    .centered-list li {
+        display: inline-block;
+        text-align: left;
+        margin-bottom: 10px;
+    }
